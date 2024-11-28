@@ -118,7 +118,7 @@ def generate_otp_for_user(request):
     new_otp.save()
 
     # Send OTP via email
-    sender_email = "jenistalaviya404@gmail.com"
+    sender_email = "your mail@gmail.com"
     receiver_email = email
     email_password = "your password"
     success, message = send_otp_via_email(sender_email, receiver_email, email_password, otp_code)
